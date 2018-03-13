@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <ul>
+        <li>{{ render(controller('App\\Controller\\IndexController::esi', { 'counter': -1 })) }}</li>
+        <li>{{ render(url('esi', { 'counter': 0 })) }}</li>
+        <li>{{ render_esi(controller('App\\Controller\\IndexController::esi', { 'counter': 1 })) }}</li>
+        <li>{{ render_esi(controller('App\\Controller\\IndexController::esi', { 'counter': 2 })) }}</li>
+        <li>{{ render_esi(controller('App\\Controller\\IndexController::esi', { 'counter': 3 })) }}</li>
+        <li>{{ render_esi(controller('App\\Controller\\IndexController::esi', { 'counter': 4 })) }}</li>
+        <li>{{ render_esi(controller('App\\Controller\\IndexController::esi', { 'counter': 5 })) }}</li>
+        <li>{{ render_esi(controller('App\\Controller\\IndexController::esi', { 'counter': 6 })) }}</li>
+        <li>{{ render_esi(controller('App\\Controller\\IndexController::esi', { 'counter': 7 })) }}</li>
+        <li>{{ render_esi(controller('App\\Controller\\IndexController::esi', { 'counter': 8 })) }}</li>
+        <li>{{ render_esi(url('esi', { 'counter': 9 })) }}</li>
+        <li>{{ render_esi(url('esi', { 'counter': 10 })) }}</li>
+        <li>{{ render_esi(url('esi', { 'counter': 11 })) }}</li>
+        <li>{{ render_esi(url('esi', { 'counter': 12 })) }}</li>
+        <li>{{ render_esi(url('esi', { 'counter': 13 })) }}</li>
+        <li>{{ render_esi(url('esi', { 'counter': 14 })) }}</li>
+        <li>{{ render_esi(url('esi', { 'counter': 15 })) }}</li>
+        <li>{{ render_esi(url('esi', { 'counter': 16 })) }}</li>
+    </ul>
+    {{ render(url('footer')) }}
+{% endblock %}
+

@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <ul>
+        <li><a href="{{ url('homepage') }}">homepage</a></li>
+        <li><a href="{{ url('hello_world_basic') }}">hello basic</a></li>
+        <li><a href="{{ url('hello_world_json') }}">hello json</a></li>
+        <li><a href="{{ url('hello_world_twig') }}">hello twig</a></li>
+        <li><a href="{{ url('hello_world_twig_layout') }}">hello twig layout</a></li>
+        <li><a href="{{ url('hello_world_twig_esi') }}">hello esi</a></li>
+    </ul>
+
+{% endblock %}

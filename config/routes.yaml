@@ -1,0 +1,35 @@
+homepage:
+    path: /
+    controller: App\Controller\IndexController::index
+
+hello_world_basic:
+    path: /hello-world-basic
+    controller: App\Controller\IndexController::helloWorldBasic
+
+hello_world_json:
+    path: /hello-world-json
+    controller: App\Controller\IndexController::helloWorldJson
+
+hello_world_twig:
+    path: /hello-world-twig
+    controller: App\Controller\IndexController::helloWorldTwig
+
+hello_world_twig_layout:
+    path: /hello-world-twig-layout
+    controller: App\Controller\IndexController::helloWorldTwigLayout
+
+hello_world_twig_esi:
+    path: /hello-world-twig-esi
+    controller: App\Controller\IndexController::withEsi
+
+esi:
+    path: /_esi/esi
+    controller: App\Controller\IndexController::esi
+
+footer:
+    path:         /_partial/_footer
+    controller:   Symfony\Bundle\FrameworkBundle\Controller\TemplateController::templateAction
+    defaults:
+        template: 'static/footer.html.twig'
+        maxAge:    60
+        sharedAge: 60
